@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<com.daily.baselibrary.views.CircleImageView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:src="@color/colorPrimary"-->
+            <!--app:civ_borderColor="@color/colorAccent"-->
+            <!--app:civ_borderWidth="5dp" />-->
+
+        <!--<com.daily.baselibrary.views.CircleImageView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--app:civ_borderColor="@color/colorAccent"-->
+            <!--app:civ_borderWidth="5dp" />-->
+
+        <com.daily.baselibrary.views.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            app:civ_borderColor="@color/colorAccent"
+            app:civ_borderWidth="5dp"
+            app:civ_fillColor="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <com.daily.baselibrary.views.ImageViewPlus
+            android:layout_width="85dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:src="@color/colorPrimaryDark"
+            app:borderColor="@color/colorAccent"
+            app:borderWidth="3dp"
+            app:rectRoundRadius="6dp" />
+
+        <com.daily.baselibrary.views.ImageViewPlus
+            android:layout_width="85dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:src="@color/colorPrimaryDark" />
+
+        <com.daily.baselibrary.views.ImageViewPlus
+            android:layout_width="85dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:src="@color/colorPrimaryDark" />
+
+        <com.daily.baselibrary.views.ImageViewPlus
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/colorAccent"
+            android:src="@color/colorPrimaryDark"
+            app:type="circle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+</LinearLayout>

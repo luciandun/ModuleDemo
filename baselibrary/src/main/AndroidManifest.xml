@@ -1,2 +1,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.daily.baselibrary" />
+    package="com.daily.baselibrary">
+
+    <!--读取设备识别码-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--网络访问权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--读写存储权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--定位相关权限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!--使用相机权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--录音权限-->
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
+
+
+</manifest>
+
+

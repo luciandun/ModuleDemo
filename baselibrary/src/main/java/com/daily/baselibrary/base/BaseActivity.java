@@ -7,8 +7,11 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
+import com.daily.baselibrary.R;
 import com.daily.baselibrary.views.LoadingDialog;
 
 /**
@@ -35,6 +38,33 @@ public abstract class BaseActivity extends AppCompatActivity {
         mContext = this;
         initView();
         initData();
+    }
+
+    /**
+     * 统一处理toolbar初始化
+     *
+     * @param title   标题
+     * @param canBack 是否显示返回箭头
+     */
+    protected void initToolbar(String title, boolean canBack) {
+        Toolbar toolbar = findView(R.id.tool_bar);
+        if (toolbar != null) {
+            toolbar.setTitle("");
+            setSupportActionBar(toolbar);
+            //可以点击返回，则关闭当前页面
+            if (canBack) {
+                TextView backView = findView(R.id.tv_back);
+                backView.setVisibility(View.VISIBLE);
+                backView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        finish();
+                    }
+                });
+            }
+            TextView tv = findView(R.id.tv_title);
+            tv.setText(title);
+        }
     }
 
 

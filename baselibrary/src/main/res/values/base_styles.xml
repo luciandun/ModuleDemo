@@ -11,7 +11,7 @@
         <item name="actionMenuTextColor">@android:color/white</item>
         <item name="android:actionMenuTextColor">@android:color/white</item>
         <item name="android:textColorSecondary">@android:color/white</item>
-        <item name="android:textSize">@dimen/itemTitleSize</item>
+        <item name="android:textSize">@dimen/itemSize</item>
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
     </style>
 

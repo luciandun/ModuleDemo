@@ -25,6 +25,7 @@ import com.daily.baselibrary.R;
  * date: 2018/11/09
  * version: 1.0
  */
+@Deprecated
 public class CircleImageView extends AppCompatImageView {
 
     private int borderColor;

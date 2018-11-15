@@ -27,6 +27,7 @@ import com.daily.baselibrary.R;
  * date: 2018/11/06
  * version: 1.0
  */
+@Deprecated
 public class RoundImageView extends AppCompatImageView {
 
 

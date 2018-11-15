@@ -36,5 +36,14 @@
         <attr name="civ_fillColor" format="color" />
     </declare-styleable>
 
+    <!--无法左右滑动的ViewPager-->
+    <declare-styleable name="NoSwipeViewpager">
+        <attr name="isSwipeEnable" format="boolean" />
+    </declare-styleable>
+
+    <!--带清除键的EditText-->
+    <declare-styleable name="ClearEditText">
+        <attr name="clearIcon" format="reference" />
+    </declare-styleable>
 
 </resources>

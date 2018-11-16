@@ -6,4 +6,7 @@
     <dimen name="titleSize">18sp</dimen>
     <dimen name="itemSize">16sp</dimen>
     <dimen name="subItemSize">14sp</dimen>
+
+    <dimen name="dividerHeight">0.5dp</dimen>
+
 </resources>

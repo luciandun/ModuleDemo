@@ -8,4 +8,24 @@
 
     <include layout="@layout/layout_title_bar" />
 
+    <com.daily.baselibrary.views.MenuItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.daily.baselibrary.views.MenuItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.daily.baselibrary.views.MenuItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.daily.baselibrary.views.MenuItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.daily.baselibrary.views.MenuItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

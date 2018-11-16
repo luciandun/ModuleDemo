@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:paddingEnd="@dimen/smallMargin"
+    android:paddingStart="@dimen/smallMargin">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/smallMargin"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_default_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+        app:layout_constraintLeft_toRightOf="@+id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"
+        tools:text="This is title" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/smallMargin"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+        app:layout_constraintRight_toLeftOf="@+id/red_dot"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"
+        tools:text="Right" />
+
+    <View
+        android:id="@+id/red_dot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:background="@drawable/shape_red_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icon"
+        app:layout_constraintRight_toLeftOf="@+id/iv_right_arrow"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon" />
+
+    <ImageView
+        android:id="@+id/iv_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_arrow_right_base"
+        app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_icon" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dividerHeight"
+        android:background="@color/dividerColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

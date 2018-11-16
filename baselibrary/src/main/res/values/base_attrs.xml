@@ -46,4 +46,16 @@
         <attr name="clearIcon" format="reference" />
     </declare-styleable>
 
+    <!--通用菜单栏控件-->
+    <declare-styleable name="MenuItem">
+        <attr name="mi_icon" format="reference" />
+        <attr name="mi_title" format="string|reference" />
+        <attr name="mi_sub_title" format="string|reference" />
+        <attr name="mi_right_content" format="string|reference" />
+        <attr name="mi_show_arrow" format="boolean" />
+        <attr name="mi_show_dot" format="boolean" />
+        <attr name="mi_show_divider" format="boolean" />
+
+    </declare-styleable>
+
 </resources>

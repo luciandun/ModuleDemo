@@ -63,6 +63,7 @@ public class BaseWebActivity extends BaseActivity {
         settings.setAllowFileAccess(true);
         settings.setDomStorageEnabled(true);
         settings.setGeolocationEnabled(true);
+        settings.setJavaScriptEnabled(true);
         //设置自适应屏幕，两者合用
         settings.setUseWideViewPort(true); //将图片调整到适合的大小
         settings.setLoadWithOverviewMode(true); // 缩放至屏幕的大小

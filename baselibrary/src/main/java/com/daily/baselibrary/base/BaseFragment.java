@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.daily.baselibrary.utils.LogUtil;
+
 /**
  * description:Fragment懒加载
  * author: dlx
@@ -58,14 +60,14 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onCreate");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onCreate");
         mContext = getActivity();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onCreateView");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onCreateView");
         View view = inflater.inflate(getLayoutResId(), container, false);
         initView(view);
         return view;
@@ -74,7 +76,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onActivityCreated");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onActivityCreated");
         isViewInitialized = true;
         prepareInitData();
     }
@@ -82,19 +84,19 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onResume");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onResume");
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onStop");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onStop");
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onDestroyView");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onDestroyView");
         isFirst = true; //当视图被销毁后应该重新加载
         isViewInitialized = false; //视图需要重新创建
     }
@@ -102,13 +104,13 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onDestroy");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onDestroy");
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.d(TAG, getClass().getSimpleName() + ":-------->> onSaveInstanceState");
+        LogUtil.d(TAG, getClass().getSimpleName() + ":-------->> onSaveInstanceState");
     }
 
     @Override

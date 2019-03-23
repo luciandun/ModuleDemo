@@ -58,4 +58,19 @@
 
     </declare-styleable>
 
+    <declare-styleable name="BarChartView">
+        <attr name="bcv_title" format="string|reference"/>
+        <attr name="bcv_xTitle" format="string|reference"/>
+        <attr name="bcv_yTitle" format="string|reference"/>
+        <attr name="bcv_titleColor" format="color"/>
+        <!--内容填充色-->
+        <attr name="bcv_contentColor" format="color"/>
+        <!--内容文字颜色-->
+        <attr name="bcv_textColor" format="color"/>
+        <!--竖直均分-->
+        <attr name="bcv_verticalLines" format="integer"/>
+        <!--柱状图宽度-->
+        <attr name="bcv_barWidth" format="dimension"/>
+    </declare-styleable>
+
 </resources>
